@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shop demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="assets/img/favicon.ico">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header-top py-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4 col-6">
+                        <div class="header-top-phone d-flex align-items-center h-100">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            <a class="ps-2" href="tel:+79014544246">+7 (901) 454-42-46</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 d-none d-sm-block">
+                        <ul class="social-icons d-flex justify-content-center">
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-vk"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-6">
+                        <div class="header-top-account d-flex justify-content-end">
+                            <div class="btn-group">
+                                <div class="dropdown">
+                                    <button class="btn btn-sm dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                        Личный кабинет
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Авторизация</a></li>
+                                        <li><a class="dropdown-item" href="#">Регистрация</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="btn-group ms-2">
+                                <div class="dropdown">
+                                    <button class="btn btn-sm dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                        Язык
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">RU</a></li>
+                                        <li><a class="dropdown-item" href="#">EN</a></li>
+                                        <li><a class="dropdown-item" href="#">DE</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="header-middle bg-white py-4">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-6 col-sm-3 col-md-3">
+                        <a href="#" class="header-logo h1">E-shop</a>
+                    </div>
+                    <div class="col-6 col-md-3 cart-buttons position-relative order-md-2 text-end d-none d-lg-block">
+                        <a href="#" class="btn p-2">
+                            <i class="fa-solid fa-heart"></i>
+                            <span class="badge text-bg-info cart-badge bg-info rounded-circle">3</span>
+                        </a>
+
+                        <button class="btn p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvasCart" aria-controls="offCanvasCart">
+                            <i class="fa-solid fa-cart-arrow-down"></i>
+                            <span class="badge text-bg-info cart-badge bg-info rounded-circle">3</span>
+                        </button>
+
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offCanvasCart" aria-labelledby="offCanvasCartLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offCanvasCartLabel">Offcanvas</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div>
+                                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                                </div>
+                                <div class="dropdown mt-3">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                        Dropdown button
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-9 order-md-1 mt-2 mt-md-0">
+                        <form action="#">
+                            <div class="input-group">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Поиск товара..."
+                                           aria-label="search-button" aria-describedby="button-search">
+                                    <button class="btn btn-outline-info" type="button" id="button-search"><i
+                                            class="fa-solid fa-magnifying-glass"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div class="header-bottom sticky-top">
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" id="offcanvasNavbar" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Catalog</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">О нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Контакты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Оплата</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Доставка</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    Каталог
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Shoes</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Jeans</a>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Sportswear</a>
+                                        <ul class="dropdown-menu dropdown-menu-end">
+                                            <li>
+                                                <a class="dropdown-item" href="#">Men's Sportswear</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Women's Sportswear</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Baby's Sportswear</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Coat</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Shirts</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="d-block d-lg-none">
+                    <a href="#" class="btn p-1">
+                        <i class="fa-solid fa-heart"></i>
+                        <span class="badge text-bg-warning cart-badge bg-warning rounded-circle">3</span>
+                    </a>
+
+                    <button class="btn p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="badge text-bg-warning cart-badge bg-warning rounded-circle">5</span>
+                    </button>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    <main class="main">
+        <div class="container-fluid">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto molestiae nesciunt non repudiandae
+                voluptatem! Culpa debitis dicta facilis hic incidunt magni nam nesciunt, nisi nobis qui quisquam, rerum
+                vel voluptate.</p>
+            <p>Earum excepturi illo non, porro quam qui tempore? Amet asperiores autem consequuntur corporis error
+                itaque minima necessitatibus nobis obcaecati, officia perferendis, provident quaerat quam quibusdam quod
+                repudiandae sapiente sed voluptates!</p>
+            <p>Adipisci aliquid aperiam beatae blanditiis consequuntur deserunt ex expedita explicabo fugiat iste
+                molestiae odio officia quisquam reiciendis sit tempora, temporibus vel veritatis? Accusantium error
+                expedita facilis impedit magni odit voluptatum.</p>
+            <p>Autem distinctio id maxime omnis repudiandae. At dolorem ducimus incidunt, ipsum iste itaque laboriosam
+                molestias nisi quibusdam reiciendis. Deleniti itaque nihil ratione velit voluptatibus? A corporis iste
+                molestiae nemo non.</p>
+            <p>Animi aspernatur, aut consequatur consequuntur culpa debitis delectus dicta ea esse fugiat harum impedit
+                odit praesentium quaerat, qui soluta velit! Dolores hic iste magnam quam reprehenderit similique
+                voluptates! Fugiat, porro?</p>
+            <p>Beatae corporis eos eveniet ex exercitationem iure laudantium magnam molestias natus, nostrum omnis porro
+                possimus quibusdam quo ratione sequi similique. Adipisci consequatur consequuntur dignissimos iusto
+                maxime nulla, possimus quo quod?</p>
+            <p>Asperiores, atque consequuntur distinctio doloribus esse ex fugit illo optio vero voluptatum. Ab alias,
+                amet corporis distinctio ducimus ea inventore iste nisi optio pariatur recusandae rerum suscipit
+                temporibus unde voluptate.</p>
+            <p>Accusantium asperiores doloremque ducimus nisi quos. Accusamus, animi assumenda ducimus ex
+                exercitationem, facere hic ipsa ipsam itaque laborum libero molestiae necessitatibus nobis nulla quaerat
+                quas quos totam voluptates. In, repellendus!</p>
+            <p>Asperiores at aut autem corporis culpa, dicta dolores doloribus est fugiat illum incidunt inventore ipsam
+                laborum minus modi mollitia obcaecati praesentium quo rerum saepe similique veniam veritatis vero.
+                Architecto, asperiores!</p>
+            <p>Ab aliquam culpa cumque eveniet impedit, non vero voluptatibus. Consequatur doloribus earum obcaecati
+                omnis praesentium quidem similique tempore totam voluptas. Adipisci dolore dolores error iusto, quas
+                saepe? Mollitia, nobis omnis?</p>
+            <p>Animi at, commodi ea fugiat fugit perferendis placeat recusandae totam! Animi aperiam aspernatur commodi
+                debitis dicta eaque facilis fugiat ipsa, iste labore minima neque quidem quod reprehenderit sit unde
+                voluptas!</p>
+            <p>Adipisci consequuntur cum ea eaque, illum officiis quos sit ut vel voluptatibus? Ab accusamus corporis
+                cupiditate delectus dolor dolorem eum, exercitationem iure quaerat quos recusandae repudiandae tenetur
+                vel veritatis voluptates?</p>
+            <p>Atque commodi debitis eius exercitationem iste labore minus nam nulla numquam quam reprehenderit
+                repudiandae sapiente sed sunt unde vero, voluptatibus? Accusamus aspernatur ea enim, explicabo id ipsa
+                ipsum maiores reiciendis.</p>
+            <p>Adipisci amet dignissimos iure neque nulla officia, quasi quisquam, quod reprehenderit tempore temporibus
+                voluptas! A consequuntur fuga laudantium mollitia officia! Aperiam corporis dicta maxime provident
+                repellendus soluta veritatis. Dolor, saepe.</p>
+            <p>Animi aspernatur, at dicta ea enim ex expedita harum illum labore laboriosam laudantium nesciunt, odit
+                officiis placeat quasi quis, quo ratione repellat tempora temporibus velit veniam vero. Ipsam, maxime
+                qui?</p>
+            <p>Accusantium ad aspernatur, assumenda consequatur consequuntur deserunt dignissimos doloremque error fuga
+                ipsa maxime molestias nam nemo neque nihil pariatur perferendis perspiciatis provident quisquam, quos
+                sapiente sequi tempore vel! Doloribus, quod.</p>
+            <p>Assumenda at ducimus enim error, esse, est excepturi incidunt inventore natus non odit placeat quae quasi
+                quis quo sed similique sint tempora veritatis, voluptates? Atque consequatur labore molestiae
+                perferendis tenetur.</p>
+            <p>Distinctio est eveniet fuga illum ipsam, iste magni, perspiciatis repellat repudiandae saepe sed sunt,
+                totam vitae? Ab commodi consequatur doloribus eligendi error, et, nam nulla, omnis praesentium qui quia
+                vitae!</p>
+            <p>Ab cupiditate deserunt omnis sequi soluta. Animi beatae magni minus molestias neque quidem ratione
+                similique, veritatis? Ducimus libero magnam magni modi perspiciatis, quas quisquam ratione repellendus
+                saepe sed sint tempore?</p>
+            <p>Corporis debitis eum excepturi quos recusandae repudiandae, totam. Cumque debitis dolore iste optio
+                possimus provident sunt vel voluptate! Accusantium amet aspernatur debitis error hic illum iusto porro
+                quia repudiandae vero.</p>
+        </div>
+    </main>
+    <footer class="footer">Footer</footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
