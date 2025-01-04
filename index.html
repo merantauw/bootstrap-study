@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="icon" href="assets/img/favicon.ico">
 </head>
@@ -80,7 +82,8 @@
                             <span class="badge text-bg-info cart-badge bg-info rounded-circle">3</span>
                         </a>
 
-                        <button class="btn p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvasCart" aria-controls="offCanvasCart">
+                        <button class="btn p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvasCart"
+                                aria-controls="offCanvasCart">
                             <i class="fa-solid fa-cart-arrow-down"></i>
                             <span class="badge text-bg-info cart-badge bg-info rounded-circle">5</span>
                         </button>
@@ -103,14 +106,16 @@
             </div>
         </div>
 
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offCanvasCart" aria-labelledby="offCanvasCartLabel" data-bs-target="offCanvasCart">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offCanvasCart" aria-labelledby="offCanvasCartLabel"
+             data-bs-target="offCanvasCart">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offCanvasCartLabel">Корзина</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
                 <div>
-                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text,
+                    images, lists, etc.
                 </div>
                 <div class="dropdown mt-3">
                     <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
@@ -125,13 +130,16 @@
             </div>
         </div>
     </header>
-    <div class="header-bottom sticky-top">
+    <div class="header-bottom sticky-top" id="header-nav">
         <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false"
+                        aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-start" id="offcanvasNavbar" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas offcanvas-start" id="offcanvasNavbar" tabindex="-1"
+                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Catalog</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -154,7 +162,8 @@
                                 <a class="nav-link" href="#">Доставка</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false" data-bs-auto-close="outside">
                                     Каталог
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end">
@@ -165,7 +174,8 @@
                                         <a class="dropdown-item" href="#">Jeans</a>
                                     </li>
                                     <li class="nav-item dropend">
-                                        <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Sportswear</a>
+                                        <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                           data-bs-auto-close="outside">Sportswear</a>
                                         <ul class="dropdown-menu dropdown-menu-end">
                                             <li>
                                                 <a class="dropdown-item" href="#">Men's Sportswear</a>
@@ -196,7 +206,8 @@
                         <span class="badge text-bg-warning cart-badge bg-warning rounded-circle">3</span>
                     </a>
 
-                    <button class="btn p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvasCart" aria-controls="offCanvasCart">
+                    <button class="btn p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvasCart"
+                            aria-controls="offCanvasCart">
                         <i class="fa-solid fa-cart-arrow-down"></i>
                         <span class="badge text-bg-warning cart-badge bg-warning rounded-circle">5</span>
                     </button>
@@ -205,74 +216,655 @@
             </div>
         </nav>
     </div>
+
     <main class="main">
-        <div class="container-fluid">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto molestiae nesciunt non repudiandae
-                voluptatem! Culpa debitis dicta facilis hic incidunt magni nam nesciunt, nisi nobis qui quisquam, rerum
-                vel voluptate.</p>
-            <p>Earum excepturi illo non, porro quam qui tempore? Amet asperiores autem consequuntur corporis error
-                itaque minima necessitatibus nobis obcaecati, officia perferendis, provident quaerat quam quibusdam quod
-                repudiandae sapiente sed voluptates!</p>
-            <p>Adipisci aliquid aperiam beatae blanditiis consequuntur deserunt ex expedita explicabo fugiat iste
-                molestiae odio officia quisquam reiciendis sit tempora, temporibus vel veritatis? Accusantium error
-                expedita facilis impedit magni odit voluptatum.</p>
-            <p>Autem distinctio id maxime omnis repudiandae. At dolorem ducimus incidunt, ipsum iste itaque laboriosam
-                molestias nisi quibusdam reiciendis. Deleniti itaque nihil ratione velit voluptatibus? A corporis iste
-                molestiae nemo non.</p>
-            <p>Animi aspernatur, aut consequatur consequuntur culpa debitis delectus dicta ea esse fugiat harum impedit
-                odit praesentium quaerat, qui soluta velit! Dolores hic iste magnam quam reprehenderit similique
-                voluptates! Fugiat, porro?</p>
-            <p>Beatae corporis eos eveniet ex exercitationem iure laudantium magnam molestias natus, nostrum omnis porro
-                possimus quibusdam quo ratione sequi similique. Adipisci consequatur consequuntur dignissimos iusto
-                maxime nulla, possimus quo quod?</p>
-            <p>Asperiores, atque consequuntur distinctio doloribus esse ex fugit illo optio vero voluptatum. Ab alias,
-                amet corporis distinctio ducimus ea inventore iste nisi optio pariatur recusandae rerum suscipit
-                temporibus unde voluptate.</p>
-            <p>Accusantium asperiores doloremque ducimus nisi quos. Accusamus, animi assumenda ducimus ex
-                exercitationem, facere hic ipsa ipsam itaque laborum libero molestiae necessitatibus nobis nulla quaerat
-                quas quos totam voluptates. In, repellendus!</p>
-            <p>Asperiores at aut autem corporis culpa, dicta dolores doloribus est fugiat illum incidunt inventore ipsam
-                laborum minus modi mollitia obcaecati praesentium quo rerum saepe similique veniam veritatis vero.
-                Architecto, asperiores!</p>
-            <p>Ab aliquam culpa cumque eveniet impedit, non vero voluptatibus. Consequatur doloribus earum obcaecati
-                omnis praesentium quidem similique tempore totam voluptas. Adipisci dolore dolores error iusto, quas
-                saepe? Mollitia, nobis omnis?</p>
-            <p>Animi at, commodi ea fugiat fugit perferendis placeat recusandae totam! Animi aperiam aspernatur commodi
-                debitis dicta eaque facilis fugiat ipsa, iste labore minima neque quidem quod reprehenderit sit unde
-                voluptas!</p>
-            <p>Adipisci consequuntur cum ea eaque, illum officiis quos sit ut vel voluptatibus? Ab accusamus corporis
-                cupiditate delectus dolor dolorem eum, exercitationem iure quaerat quos recusandae repudiandae tenetur
-                vel veritatis voluptates?</p>
-            <p>Atque commodi debitis eius exercitationem iste labore minus nam nulla numquam quam reprehenderit
-                repudiandae sapiente sed sunt unde vero, voluptatibus? Accusamus aspernatur ea enim, explicabo id ipsa
-                ipsum maiores reiciendis.</p>
-            <p>Adipisci amet dignissimos iure neque nulla officia, quasi quisquam, quod reprehenderit tempore temporibus
-                voluptas! A consequuntur fuga laudantium mollitia officia! Aperiam corporis dicta maxime provident
-                repellendus soluta veritatis. Dolor, saepe.</p>
-            <p>Animi aspernatur, at dicta ea enim ex expedita harum illum labore laboriosam laudantium nesciunt, odit
-                officiis placeat quasi quis, quo ratione repellat tempora temporibus velit veniam vero. Ipsam, maxime
-                qui?</p>
-            <p>Accusantium ad aspernatur, assumenda consequatur consequuntur deserunt dignissimos doloremque error fuga
-                ipsa maxime molestias nam nemo neque nihil pariatur perferendis perspiciatis provident quisquam, quos
-                sapiente sequi tempore vel! Doloribus, quod.</p>
-            <p>Assumenda at ducimus enim error, esse, est excepturi incidunt inventore natus non odit placeat quae quasi
-                quis quo sed similique sint tempora veritatis, voluptates? Atque consequatur labore molestiae
-                perferendis tenetur.</p>
-            <p>Distinctio est eveniet fuga illum ipsam, iste magni, perspiciatis repellat repudiandae saepe sed sunt,
-                totam vitae? Ab commodi consequatur doloribus eligendi error, et, nam nulla, omnis praesentium qui quia
-                vitae!</p>
-            <p>Ab cupiditate deserunt omnis sequi soluta. Animi beatae magni minus molestias neque quidem ratione
-                similique, veritatis? Ducimus libero magnam magni modi perspiciatis, quas quisquam ratione repellendus
-                saepe sed sint tempore?</p>
-            <p>Corporis debitis eum excepturi quos recusandae repudiandae, totam. Cumque debitis dolore iste optio
-                possimus provident sunt vel voluptate! Accusantium amet aspernatur debitis error hic illum iusto porro
-                quia repudiandae vero.</p>
+        <div id="carousel" class="carousel slide carousel-fade">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+                        aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/slider/1.webp" class="d-block w-100" alt="Фото товара">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>First slide label</h2>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/slider/2.webp" class="d-block w-100" alt="Фото товара">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Second slide label</h2>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/slider/3.webp" class="d-block w-100" alt="Фото товара">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Third slide label</h2>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/slider/4.webp" class="d-block w-100" alt="Фото товара">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Fourth slide label</h2>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/slider/5.webp" class="d-block w-100" alt="Фото товара">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Fifth slide label</h2>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+
+        <section class="advantages">
+            <div class="container-fluid">
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h2 class="section-title">
+                            <span>Наши преимущества</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row gy-4 items">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="item">
+                            <p><i class="fas fa-shipping-fast"></i></p>
+                            <p>Прямые поставки от производителей брендов</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="item">
+                            <p><i class="fas fa-cubes"></i></p>
+                            <p>Широкий ассортимент товаров. Более 10 тыс. наименований</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="item">
+                            <p><i class="fas fa-hand-holding-usd"></i></p>
+                            <p>Приятные и конкурентные цены</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="item">
+                            <p><i class="fas fa-user-graduate"></i></p>
+                            <p>Консультации от профессионалов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <div class="container-fluid">
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h2 class="section-title">
+                            <span>Рекомендуемые товары</span>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                        <div class="product-card">
+                            <div class="product-card-offer">
+                                <div class="offer-hit">
+                                    Hit
+                                </div>
+                                <div class="offer-new">
+                                    New
+                                </div>
+                            </div>
+                            <div class="product-thumb">
+                                <a href="product.html" class=""><img src="assets/img/products/1.jpg" alt=""></a>
+                            </div>
+                            <div class="product-details">
+                                <h4>
+                                    <a href="product.html">Product 1 Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing.</a>
+                                </h4>
+                                <p class="product-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In,
+                                    nam!</p>
+                                <div class="product-bottom-details d-flex justify-content-between">
+                                    <div class="product-price">
+                                        <small>$70</small>
+                                        $64
+                                    </div>
+                                    <div class="product-links">
+                                        <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                        <div class="product-card">
+                            <div class="product-card-offer">
+                                <div class="offer-hit">
+                                    Hit
+                                </div>
+                            </div>
+                            <div class="product-thumb">
+                                <a href="product.html" class=""><img src="assets/img/products/2.jpg" alt=""></a>
+                            </div>
+                            <div class="product-details">
+                                <h4>
+                                    <a href="product.html">Product 2</a>
+                                </h4>
+                                <p class="product-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In,
+                                    nam!</p>
+                                <div class="product-bottom-details d-flex justify-content-between">
+                                    <div class="product-price">
+                                        <small>$70</small>
+                                        $64
+                                    </div>
+                                    <div class="product-links">
+                                        <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                        <div class="product-card">
+                            <div class="product-card-offer">
+                                <!--<div class="offer-hit">
+                                    Hit
+                                </div>
+                                <div class="offer-new">
+                                    New
+                                </div>-->
+                            </div>
+                            <div class="product-thumb">
+                                <a href="product.html" class=""><img src="assets/img/products/3.jpg" alt=""></a>
+                            </div>
+                            <div class="product-details">
+                                <h4>
+                                    <a href="product.html">Product 3 Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing.</a>
+                                </h4>
+                                <p class="product-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In,
+                                    nam!</p>
+                                <div class="product-bottom-details d-flex justify-content-between">
+                                    <div class="product-price">
+                                        <small>$70</small>
+                                        $64
+                                    </div>
+                                    <div class="product-links">
+                                        <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                        <div class="product-card">
+                            <div class="product-card-offer">
+                                <div class="offer-hit">
+                                    Hit
+                                </div>
+                                <div class="offer-new">
+                                    New
+                                </div>
+                            </div>
+                            <div class="product-thumb">
+                                <a href="product.html" class=""><img src="assets/img/products/4.jpg" alt=""></a>
+                            </div>
+                            <div class="product-details">
+                                <h4>
+                                    <a href="product.html">Product 4</a>
+                                </h4>
+                                <p class="product-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In,
+                                    nam!</p>
+                                <div class="product-bottom-details d-flex justify-content-between">
+                                    <div class="product-price">
+                                        <small>$70</small>
+                                        $64
+                                    </div>
+                                    <div class="product-links">
+                                        <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                        <div class="product-card">
+                            <div class="product-card-offer">
+                                <div class="offer-new">
+                                    New
+                                </div>
+                            </div>
+                            <div class="product-thumb">
+                                <a href="product.html" class=""><img src="assets/img/products/5.jpg" alt=""></a>
+                            </div>
+                            <div class="product-details">
+                                <h4>
+                                    <a href="product.html">Product 5 Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing.</a>
+                                </h4>
+                                <p class="product-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In,
+                                    nam!</p>
+                                <div class="product-bottom-details d-flex justify-content-between">
+                                    <div class="product-price">
+                                        <small>$70</small>
+                                        $64
+                                    </div>
+                                    <div class="product-links">
+                                        <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                        <div class="product-card">
+                            <div class="product-card-offer">
+                                <div class="offer-hit">
+                                    Hit
+                                </div>
+                            </div>
+                            <div class="product-thumb">
+                                <a href="product.html" class=""><img src="assets/img/products/6.jpg" alt=""></a>
+                            </div>
+                            <div class="product-details">
+                                <h4>
+                                    <a href="product.html">Product 6 Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing.</a>
+                                </h4>
+                                <p class="product-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In,
+                                    nam!</p>
+                                <div class="product-bottom-details d-flex justify-content-between">
+                                    <div class="product-price">
+                                        <small>$70</small>
+                                        $64
+                                    </div>
+                                    <div class="product-links">
+                                        <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                        <div class="product-card">
+                            <div class="product-card-offer">
+                                <div class="offer-hit">
+                                    Hit
+                                </div>
+                                <div class="offer-new">
+                                    New
+                                </div>
+                            </div>
+                            <div class="product-thumb">
+                                <a href="product.html" class=""><img src="assets/img/products/7.jpg" alt=""></a>
+                            </div>
+                            <div class="product-details">
+                                <h4>
+                                    <a href="product.html">Product 7 Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing.</a>
+                                </h4>
+                                <p class="product-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In,
+                                    nam!</p>
+                                <div class="product-bottom-details d-flex justify-content-between">
+                                    <div class="product-price">
+                                        <small>$70</small>
+                                        $64
+                                    </div>
+                                    <div class="product-links">
+                                        <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                        <div class="product-card">
+                            <div class="product-card-offer">
+                                <div class="offer-hit">
+                                    Hit
+                                </div>
+                                <div class="offer-new">
+                                    New
+                                </div>
+                            </div>
+                            <div class="product-thumb">
+                                <a href="product.html" class=""><img src="assets/img/products/8.jpg" alt=""></a>
+                            </div>
+                            <div class="product-details">
+                                <h4>
+                                    <a href="product.html">Product 8 Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing.</a>
+                                </h4>
+                                <p class="product-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In,
+                                    nam!</p>
+                                <div class="product-bottom-details d-flex justify-content-between">
+                                    <div class="product-price">
+                                        <small>$70</small>
+                                        $64
+                                    </div>
+                                    <div class="product-links">
+                                        <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="new-products">
+            <div class="container-fluid">
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h2 class="section-title">
+                            <span>Новинки</span>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="owl-carousel owl-theme owl-carousel-full">
+                    <div class="product-card">
+                        <div class="product-card-offer">
+                            <div class="offer-hit">
+                                Hit
+                            </div>
+                            <div class="offer-new">
+                                New
+                            </div>
+                        </div>
+                        <div class="product-thumb">
+                            <a href="product.html" class=""><img src="assets/img/products/1.jpg" alt=""></a>
+                        </div>
+                        <div class="product-details">
+                            <h4>
+                                <a href="product.html">Product 1 Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing.</a>
+                            </h4>
+                            <p class="product-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In,
+                                nam!</p>
+                            <div class="product-bottom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$70</small>
+                                    $64
+                                </div>
+                                <div class="product-links">
+                                    <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card-offer">
+                            <div class="offer-hit">
+                                Hit
+                            </div>
+                        </div>
+                        <div class="product-thumb">
+                            <a href="product.html" class=""><img src="assets/img/products/2.jpg" alt=""></a>
+                        </div>
+                        <div class="product-details">
+                            <h4>
+                                <a href="product.html">Product 2</a>
+                            </h4>
+                            <p class="product-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In,
+                                nam!</p>
+                            <div class="product-bottom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$70</small>
+                                    $64
+                                </div>
+                                <div class="product-links">
+                                    <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card-offer">
+                            <!--<div class="offer-hit">
+                                Hit
+                            </div>
+                            <div class="offer-new">
+                                New
+                            </div>-->
+                        </div>
+                        <div class="product-thumb">
+                            <a href="product.html" class=""><img src="assets/img/products/3.jpg" alt=""></a>
+                        </div>
+                        <div class="product-details">
+                            <h4>
+                                <a href="product.html">Product 3 Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing.</a>
+                            </h4>
+                            <p class="product-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In,
+                                nam!</p>
+                            <div class="product-bottom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$70</small>
+                                    $64
+                                </div>
+                                <div class="product-links">
+                                    <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card-offer">
+                            <div class="offer-hit">
+                                Hit
+                            </div>
+                            <div class="offer-new">
+                                New
+                            </div>
+                        </div>
+                        <div class="product-thumb">
+                            <a href="product.html" class=""><img src="assets/img/products/4.jpg" alt=""></a>
+                        </div>
+                        <div class="product-details">
+                            <h4>
+                                <a href="product.html">Product 4</a>
+                            </h4>
+                            <p class="product-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In,
+                                nam!</p>
+                            <div class="product-bottom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$70</small>
+                                    $64
+                                </div>
+                                <div class="product-links">
+                                    <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card-offer">
+                            <div class="offer-new">
+                                New
+                            </div>
+                        </div>
+                        <div class="product-thumb">
+                            <a href="product.html" class=""><img src="assets/img/products/5.jpg" alt=""></a>
+                        </div>
+                        <div class="product-details">
+                            <h4>
+                                <a href="product.html">Product 5 Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing.</a>
+                            </h4>
+                            <p class="product-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In,
+                                nam!</p>
+                            <div class="product-bottom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$70</small>
+                                    $64
+                                </div>
+                                <div class="product-links">
+                                    <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card-offer">
+                            <div class="offer-hit">
+                                Hit
+                            </div>
+                        </div>
+                        <div class="product-thumb">
+                            <a href="product.html" class=""><img src="assets/img/products/6.jpg" alt=""></a>
+                        </div>
+                        <div class="product-details">
+                            <h4>
+                                <a href="product.html">Product 6 Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing.</a>
+                            </h4>
+                            <p class="product-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In,
+                                nam!</p>
+                            <div class="product-bottom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$70</small>
+                                    $64
+                                </div>
+                                <div class="product-links">
+                                    <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card-offer">
+                            <div class="offer-hit">
+                                Hit
+                            </div>
+                            <div class="offer-new">
+                                New
+                            </div>
+                        </div>
+                        <div class="product-thumb">
+                            <a href="product.html" class=""><img src="assets/img/products/7.jpg" alt=""></a>
+                        </div>
+                        <div class="product-details">
+                            <h4>
+                                <a href="product.html">Product 7 Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing.</a>
+                            </h4>
+                            <p class="product-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In,
+                                nam!</p>
+                            <div class="product-bottom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$70</small>
+                                    $64
+                                </div>
+                                <div class="product-links">
+                                    <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card-offer">
+                            <div class="offer-hit">
+                                Hit
+                            </div>
+                            <div class="offer-new">
+                                New
+                            </div>
+                        </div>
+                        <div class="product-thumb">
+                            <a href="product.html" class=""><img src="assets/img/products/8.jpg" alt=""></a>
+                        </div>
+                        <div class="product-details">
+                            <h4>
+                                <a href="product.html">Product 8 Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing.</a>
+                            </h4>
+                            <p class="product-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In,
+                                nam!</p>
+                            <div class="product-bottom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$70</small>
+                                    $64
+                                </div>
+                                <div class="product-links">
+                                    <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
-    <footer class="footer">Footer</footer>
+
+    <footer class="footer"></footer>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/owlcarousel/owl.carousel.min.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
