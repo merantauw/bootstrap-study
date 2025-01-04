@@ -59,6 +59,8 @@ section {
 .section-title span {
     background-color: var(--bg-color);
     padding-right: 1rem;
+    position: relative;
+    z-index: 1;
 }
 
 .section-title:after {
@@ -68,7 +70,7 @@ section {
     top: 50%;
     left: 0;
     border-top: 1px dashed var(--text-color);
-    z-index: -1;
+    /*z-index: -1;*/
 }
 
 /*========================general rules============================*/
@@ -91,12 +93,6 @@ main.main {
 .form-control::placeholder {
     color: var(--gray-color);
 }
-
-
-/*.btn,
-.dropdown-menu{
-    border-radius: 0;
-}*/
 
 /*========================general rules============================*/
 
@@ -324,7 +320,70 @@ ul.social-icons a:hover {
 }
 /*======================== Product-card ==============================*/
 
+/*======================== About-us section ==============================*/
+.about-us{
+    background-color: #fff;
+}
+
+.about-us .section-title span{
+    background-color: #fff;
+}
+/*======================== About-us section ==============================*/
+
 /*======================== Main ==============================*/
+
+/*======================== Footer ==============================*/
+
+footer{
+    background-color: var(--contrast-color);
+    padding: 50px 0;
+    color: #fff;
+}
+
+footer h4{
+    color: var(--accent-color);
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+footer a:hover{
+    color: var(--accent-color);
+}
+
+.footer-icons{
+    gap: 20px;
+}
+
+.footer-icons li {
+    font-size: 24px;
+}
+
+/*======================== Footer ==============================*/
+
+#top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--accent-color);
+    opacity: .5;
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    border-radius: 16px;
+    border: 0;
+    font-size: 25px;
+    transition: all .5s;
+    z-index: 10;
+    display: none;
+}
+
+#top:hover{
+    opacity: 1;
+}
 
 @media only screen and (min-width: 992px) {
     .header-bottom .navbar .dropdown-menu-end {
@@ -340,5 +399,12 @@ ul.social-icons a:hover {
 @media only screen and (max-width: 991.98px) {
     .header-bottom .navbar .dropdown-menu {
         padding-left: 1rem;
+    }
+}
+
+@media (max-width: 420px){
+    footer .row div{
+        max-width: 100%;
+        width: 100%;
     }
 }
