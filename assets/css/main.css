@@ -70,7 +70,12 @@ section {
     top: 50%;
     left: 0;
     border-top: 1px dashed var(--text-color);
-    /*z-index: -1;*/
+}
+
+label.required::before{
+    content: '* ';
+    color: #dc3545;
+    font-weight: 700;
 }
 
 /*========================general rules============================*/
@@ -86,7 +91,7 @@ main.main {
 
 .form-control:focus {
     color: var(--text-color);
-    border-color: #0dcaf0;
+    border-color: var(--accent-color);
     box-shadow: none;
 }
 
@@ -94,6 +99,22 @@ main.main {
     color: var(--gray-color);
 }
 
+.btn-coupon{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.btn-coupon:hover{
+    color: var(--contrast-color);
+}
+
+.cart-summary h3{
+    color: #000;
+}
+
+.cart-summary .btn{
+    padding: 1rem;
+}
 /*========================general rules============================*/
 
 /*=========================  Header  ============================*/
@@ -345,7 +366,7 @@ ul.social-icons a:hover {
 
 .about-us .section-title span,
 .sidebar .section-title span,
-.product-content .section-title span{
+.bg-white .section-title span{
     background-color: #fff;
 }
 /*======================== About-us section ==============================*/
@@ -469,7 +490,30 @@ ul.social-icons a:hover {
 .tab-content{
     padding-top: 20px;
 }
-    /*======================== Product Page ==============================*/
+
+.cart-qty{
+    width: 70px;
+}
+/*======================== Product Page ==============================*/
+
+/*======================== Cart Page ==============================*/
+.cart-content table img {
+    max-width: 75px;
+}
+
+.cart-content table th{
+    text-align: center;
+}
+
+.cart-content table td{
+    padding: 1rem;
+}
+
+.cart-content-title{
+    text-decoration: none;
+    display: block;
+}
+/*======================== Cart Page ==============================*/
 
 /*======================== Footer ==============================*/
 
