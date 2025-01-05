@@ -56,7 +56,6 @@ section {
     font-weight: 700;
 }
 
-.section-title span,
 .section-title span{
     background-color: var(--bg-color);
     padding-right: 1rem;
@@ -345,7 +344,8 @@ ul.social-icons a:hover {
 }
 
 .about-us .section-title span,
-.sidebar .section-title span{
+.sidebar .section-title span,
+.product-content .section-title span{
     background-color: #fff;
 }
 /*======================== About-us section ==============================*/
@@ -437,6 +437,40 @@ ul.social-icons a:hover {
 
 /*======================== Category Page ==============================*/
 
+/*======================== Product Page ==============================*/
+.product-content .product-price{
+    font-size: 25px;
+}
+
+.product-content .input-group{
+    width: 280px;
+}
+
+.product-content .card i{
+    color: var(--accent-color);
+}
+
+.product-content .card{
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.product-content .card ul li::before{
+    content: '\f105';
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.nav-tabs .nav-link{
+    color: var(--contrast-color);
+}
+
+.tab-content{
+    padding-top: 20px;
+}
+    /*======================== Product Page ==============================*/
+
 /*======================== Footer ==============================*/
 
 footer{
@@ -514,6 +548,36 @@ footer a:hover{
     .sidebar .collapse-filters-btn{
         display: none;
         color: var(--contrast-color);
+    }
+}
+
+
+@media (max-width: 500px) {
+    .product-content-details .nav-tabs {
+        display: flex;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .product-content-details .nav-tabs .nav-link{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .nav-tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-tabs .nav-item {
+        flex: 0 0 auto;
+    }
+
+    .nav-tabs .nav-link {
+        padding: 0.5rem 1rem;
     }
 }
 
