@@ -20,6 +20,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+textarea{
+    resize: none;
+}
+
 a {
     color: var(--text-color);
     text-decoration: underline;
@@ -89,7 +93,8 @@ main.main {
     flex: 1 1 auto;
 }
 
-.form-control:focus {
+.form-control:focus,
+.form-select:focus{
     color: var(--text-color);
     border-color: var(--accent-color);
     box-shadow: none;
@@ -357,7 +362,29 @@ ul.social-icons a:hover {
     display: inline-block;
     width: auto;
 }
-/*======================== Product-card ==============================*/
+
+.product-rating i{
+    color: #ccc;
+}
+
+.product-rating .active{
+    color: var(--accent-color);
+}
+
+.product-rating .count-reviews{
+    margin-left: 10px;
+}
+
+.product-review-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-review-header .review-date{
+    color: var(--gray-color);
+}
+
+    /*======================== Product-card ==============================*/
 
 /*======================== About-us section ==============================*/
 .about-us{
@@ -494,6 +521,7 @@ ul.social-icons a:hover {
 .cart-qty{
     width: 70px;
 }
+
 /*======================== Product Page ==============================*/
 
 /*======================== Cart Page ==============================*/
