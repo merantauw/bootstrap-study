@@ -1,6 +1,6 @@
 <?php
 
-require 'funcs.php';
+/*require 'funcs.php';*/
 
 $title = 'My blog :: Home';
 
@@ -32,6 +32,7 @@ $posts = [
     ],
 ];
 
+
 $recent_posts = [
     1 => [
         'title' => 'An item',
@@ -55,4 +56,6 @@ $recent_posts = [
     ],
 ];
 
-require('app/views/index.tpl.php');
+
+require VIEWS . '/index.tpl.php';
+
