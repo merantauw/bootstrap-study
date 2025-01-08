@@ -16,7 +16,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
+                    <a class="navbar-brand" href="index.php">Navbar</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -34,34 +34,3 @@
             </nav>
         </div>
     </header>
-
-    <main class="main py-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <?php echo $post ?>
-                </div>
-
-                <div class="col-md-4">
-                    <h3>Recent posts</h3>
-                    <ul class="list-group">
-                        <?php foreach ($recent_posts as $recent_post): ?>
-                            <li class="list-group-item"><a href="post/<?php echo $recent_post['slug'] ?>"><?php echo $recent_post['title'] ?></a></li>
-                        <?php endforeach; ?>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer class="footer ">
-        <div class="text-bg-dark p-3 text-center">
-            &copy; Copyright <?= date('Y') ?>
-        </div>
-    </footer>
-</div>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-</html>
